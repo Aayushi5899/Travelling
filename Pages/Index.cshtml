@@ -5,6 +5,41 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Travelling</h1>
+    <h1>Travelling</h1>
     <p>The current time on the server is @DateTime.Now </p>
 </div>
+@{
+    var Toursattraction = new [] {
+        new{
+            place ="New Zealand",
+            attractions = "QueensTown",
+            Budget = 4000
+        },
+        new{
+            place ="Canada",
+            attractions = "CN tower,Nigara falls",
+            Budget = 6000
+        },
+        new{
+            place ="India",
+            attractions = "TajMahal",
+            Budget = 7000
+        },
+        new{
+            place ="China",
+            attractions = "The Great wall of China",
+            Budget = 6000
+        },
+        new{
+            place ="Bali",
+            attractions = "Beachs",
+            Budget = 5000
+        }
+    };
+}
+
+@for (var i = 0; i<Toursattraction.Length; i++)
+{
+    var places = Toursattraction[i];
+    <text>Places to Visit : @places.place <br /></text>
+}

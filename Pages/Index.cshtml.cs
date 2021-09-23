@@ -11,6 +11,7 @@ namespace Travelling.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+        DateTime todaysDate;
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -19,7 +20,7 @@ namespace Travelling.Pages
 
         public void OnGet()
         {
-
+          DateTime todaysDate = DateTime.Now;
         }
     }
 }
