@@ -9,40 +9,25 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Travelling
+namespace RazorPagesMovie
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration, IWebHostEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-            Environment = env;
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
-         public IWebHostEnvironment Environment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            {
-        if (Environment.IsDevelopment())
-        {
-            services.AddDbContext<RazorPagesTravellingContext>(options =>
-            options.UseSqlite(
-                Configuration.GetConnectionString("RazorPagesTravellingContext")));
-        }
-        else
-        {
-            services.AddDbContext<RazorPagesTravellingContext>(options =>
-            options.UseSqlServer(
-                Configuration.GetConnectionString("TravellingContext")));
-        }
             services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -67,7 +52,5 @@ namespace Travelling
                 endpoints.MapRazorPages();
             });
         }
-        }
     }
 }
-

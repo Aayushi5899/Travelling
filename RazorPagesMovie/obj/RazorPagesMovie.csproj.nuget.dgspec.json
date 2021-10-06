@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\Travelling.csproj": {}
+    "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\RazorPagesMovie\\RazorPagesMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\Travelling.csproj": {
+    "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\RazorPagesMovie\\RazorPagesMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\Travelling.csproj",
-        "projectName": "Travelling",
-        "projectPath": "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\Travelling.csproj",
+        "projectUniqueName": "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\RazorPagesMovie\\RazorPagesMovie.csproj",
+        "projectName": "RazorPagesMovie",
+        "projectPath": "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\RazorPagesMovie\\RazorPagesMovie.csproj",
         "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\obj\\",
+        "outputPath": "C:\\Users\\ayush\\Documents\\GitHub\\Travelling\\RazorPagesMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ayush\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,22 +37,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.SQLite": {
-              "target": "Package",
-              "version": "[5.0.10, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
